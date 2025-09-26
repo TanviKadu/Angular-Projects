@@ -1,0 +1,21 @@
+<section class="billing-page" *ngIf="product">
+    <h2>Billing Details</h2>
+    <div class="billing-card">
+      <img [src]="product.image" [alt]="product.name">
+      <h3>{{ product.name }}</h3>
+      
+      <div class="quantity-container">
+        <button class="quantity-btn" (click)="decreaseQuantity()">-</button>
+        <span class="quantity">{{ quantity }}</span>
+        <button class="quantity-btn" (click)="increaseQuantity()">+</button>
+      </div>
+  
+      <p class="price">Total: {{ totalPrice | currency }}</p>
+  
+      <label for="address">Shipping Address:</label>
+      <input type="text" id="address" placeholder="Enter your address" required>
+  
+      <button class="btn">Proceed to Payment</button>
+    </div>
+  </section>
+  
