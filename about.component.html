@@ -1,0 +1,25 @@
+<div class="about-container">
+    <h1>About Us</h1>
+    <p>Welcome to <strong>ShopEase</strong>, your one-stop destination for all your shopping needs. We are committed to providing you with the best products, unmatched quality, and excellent customer service.</p>
+  
+    <h2>Our Mission</h2>
+    <p>At ShopEase, we aim to bring convenience and affordability to your shopping experience. We partner with top brands and trusted sellers to ensure that you get only the best.</p>
+  
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Wide range of products across multiple categories.</li>
+      <li>Secure and easy payment options.</li>
+      <li>Fast and reliable delivery services.</li>
+      <li>24/7 customer support to assist you anytime.</li>
+    </ul>
+  
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+      <div *ngFor="let member of teamMembers" class="team-card">
+        <img [src]="member.photo" [alt]="member.name" />
+        <h3>{{ member.name }}</h3>
+        <p>{{ member.role }}</p>
+      </div>
+    </div>
+  </div>
+  
