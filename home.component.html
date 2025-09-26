@@ -1,0 +1,38 @@
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our E-Commerce Store</h1>
+      <p>Shop the best products at unbeatable prices.</p>
+      <a routerLink="/products" class="btn">Shop Now</a>
+    </div>
+  </section>
+  
+  <!-- Featured Products -->
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card" *ngFor="let product of featuredProducts">
+        <img src="" [alt]="product.name">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.price | currency }}</p>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Shop by Categories</h2>
+    <div class="category-grid">
+      <div class="category-card" *ngFor="let category of categories">
+        <img [src]="category.image" [alt]="category.name">
+        <h3>{{ category.name }}</h3>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 E-Commerce Site. All Rights Reserved.</p>
+  </footer>
+  
