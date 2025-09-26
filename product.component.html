@@ -1,0 +1,12 @@
+<section class="product-page">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card" *ngFor="let product of products">
+        <img [src]="product.image" [alt]="product.name">
+        <h3>{{ product.name }}</h3>
+        <p class="price">{{ product.price | currency }}</p>
+        <button class="btn" (click)="goToBilling(product)">Buy Now</button>
+      </div>
+    </div>
+  </section>
+  
