@@ -1,0 +1,47 @@
+<!-- Navigation Bar -->
+<nav>
+  <ul>
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/product">Product</a></li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a routerLink="/login">Login</a></li>
+  </ul>
+</nav>
+
+<!-- Main Content (Will Change Based on Route) -->
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/product">Product</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/login">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email: support@example.com</p>
+      <p>Phone: +123 456 7890</p>
+      <p>Address: 123 Main Street, City, Country</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <a href="#"><img src="assets/facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="assets/instagram-icon.png" alt="Instagram"></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 My Website. All Rights Reserved.</p>
+  </div>
+</footer>

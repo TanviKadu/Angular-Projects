@@ -1,0 +1,115 @@
+/* Navigation Bar (Horizontal) */
+nav {
+    background-color: #007bff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* Main Content */
+  .content {
+    min-height: 80vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer Styling (Reduced Height) */
+  footer {
+    background-color: #007bff; /* Matching the navbar color */
+    color: white;
+    padding: 10px 0; /* Reduced height */
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5px 20px; /* Reduced padding */
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 5px 10px;
+    text-align: center;
+  }
+  
+  .footer-section h3 {
+    font-size: 14px; /* Slightly smaller */
+    margin-bottom: 5px;
+    border-bottom: 1px solid white; /* Lighter separation */
+    padding-bottom: 3px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 2px 0;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+  }
+  
+  /* Social Media Icons */
+  .footer-section img {
+    width: 22px; /* Slightly smaller */
+    height: 22px;
+    margin: 0 3px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .footer-section img:hover {
+    opacity: 1;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 0; /* Reduced height */
+    font-size: 12px; /* Slightly smaller text */
+    color: white;
+  }
+  
